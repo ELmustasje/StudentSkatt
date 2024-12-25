@@ -5,10 +5,10 @@ function Welcome() {
         Velkommen til StudentSkatt
       </h1>
       <p style={{ fontSize: '1.2rem', color: '#555' }}>
-        Få full oversikt over skattefordeler og fradrag som student! Vi hjelper deg med å spare penger og gjøre skatteprosessen enklere.
+        Få full oversikt over skattefordeler og fradrag som student! Jeg hjelper deg med å spare penger og gjøre skatteprosessen enklere.
       </p>
       <p style={{ fontSize: '1rem', color: '#666', marginTop: '10px' }}>
-        Utforsk nyttige tips, brukervennlige verktøy og oppdatert informasjon for å maksimere dine skattefordeler.
+        NB: Dette er bare tips og triks.
       </p>
       <a
         href="/guides"
