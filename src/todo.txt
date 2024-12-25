@@ -1,0 +1,4 @@
+1. Results.tsx
+2. Finne ut mer om skatteformler, fradrag osv.
+3. routing
+
