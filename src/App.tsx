@@ -1,6 +1,5 @@
-import Welcome from './assets/Welcome'
 import Footer from './assets/Footer'
-import Guide from './assets/Guide'
+import Guide from './assets/Pages/Guide'
 
 function App() {
   return (
@@ -8,7 +7,7 @@ function App() {
       <div className="container flex-grow-1">
         <Guide />
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   )
 }

@@ -1,4 +1,7 @@
-1. Results.tsx
-2. Finne ut mer om skatteformler, fradrag osv.
-3. routing
+* resultat sider: inntekt, formue, bsu, huslån, reise, utgifter, askjer, gjennerelle tips    
+* legge til hvordan regne netto formue
+* Finne ut mer om skatteformler, fradrag osv.
+* routing
+
+
 
