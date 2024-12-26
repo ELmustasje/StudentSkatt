@@ -47,7 +47,7 @@ const Guide: React.FC = () => {
     if (income > 214213) {
       userBenefits.push(
         <a href="/inntektsgrense" target="_blank" rel="noopener noreferrer">
-          Du har inntekt over inntektsgrensen til Lånekassen. Dette kan påvirke ditt lån. Se måter å flytte inntekten på.
+          Du har inntekt over inntektsgrensen til Lånekassen. Dette kan påvirke ditt lån. Leter etter en god løsning for dette.
         </a>
       );
     }
@@ -71,7 +71,7 @@ const Guide: React.FC = () => {
     if (travel > 14400) {
       userBenefits.push(
         <a href="/reisefradrag" target="_blank" rel="noopener noreferrer">
-          Du har nok reisekostnadder til å kunne få fradrag på skatte. Se mer her.
+          Du har nok reisekostnadder til å kunne få fradrag på skatte. Se hvordan!.
         </a>
       );
     }
@@ -99,11 +99,17 @@ const Guide: React.FC = () => {
     if (BSU > maxBSU && income > frikort) {
       userBenefits.push(
         <a href="/bsubesparing" target="_blank" rel="noopener noreferrer">
-          Save BSU
+          Du har nok inntekt til at det blir smart å spare i BSU, se her.
         </a>
       );
-    }
+    } else if (BSU > 0 && income < frikort) {
+      userBenefits.push(
+        <a href="/fondbesparing" target="_blank" rel="noopener noreferrer">
+          Du har for lite inntekt til å få nok ut av BSU, se her!
+        </a>
+      );
 
+    }
     if (userBenefits.length === 0) {
       userBenefits.push(
         <a href="/generelle-tips" target="_blank" rel="noopener noreferrer">
