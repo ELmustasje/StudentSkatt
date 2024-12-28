@@ -11,7 +11,7 @@ function Welcome() {
         NB: Dette er bare tips og triks.
       </p>
       <a
-        href="/guides"
+        href="/guide"
         style={{
           display: 'inline-block',
           marginTop: '20px',

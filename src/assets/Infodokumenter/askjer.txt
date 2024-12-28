@@ -1,0 +1,11 @@
+I år kan du få en skattefri gevinst på askjer og fond. Du må bare være klar over det! 
+Dette smutthullet benytter seg av personfradraget som bare fra 2021 til 24 har økt fra 52.250 til 88.250. I forslaget til statsbudsjettet for 2025 er det foreslått at dette igjen økes til 108.550. Går dete gjennom blir det en økning på 106 prosent på 5 år. Kominasjonen av økt personfradag og 46 prosent minsefradrag, gjør at du samlet sett bare betaler trygdeavfift og ikke skatt på !alminnelig! inntekt på under 200.000. Dette gjør at vi kan ta ut gevisnt fra aksjer og fond som gjør at vi treffer denne grensen skattefritt. Men det er en del regler som vi må være klar over. 
+
+smutthullet fungerer slik:
+Du kan ha tilsvarende personfradraget i samlet kapitalinntekter hvert år, uten at det utløser skatt på gevinster. Men siden det her er snakk om gevinst på aksjer eller aksjefond så må vi ta hendsynt til oppjusteringsfaktoren. Dette er tatt hensyn til i utreginen vi gjorde i sted, men jeg ville sett gjennom selv med din skattemelding. Formelen blir som følger: Med en oppjusteringsfaktor på 72% (2024) og minsefradrag på 46% av inntekt (sjekk). Blir max utak = (minsefradrag + personfradag - inntekt) / 1.72. siden runder ned til nærmeste 10kr for å ha litt margin.
+
+Nå kan du revistere hele beløpet. NB!! Om du nå samme dag revisterer i samme aksje/fond riskerer du å bli utsatt for en gjennomskjæring av skatteetaten. Det er vitig at du gjør en riskoendring når du revisterer. Så enten vent en uke, eller velg noen nye fond/aksjer. For med pengene ute av markede eller nye fond/aksjer har du gjort en "riskoendring" som gjør dette lovelig.
+
+Som nevnt trenger du ikke gjøre noe aktivt for å få dette fradraget, du må bare være klar over det. Jo nærmere du kommer årsslutt, jo større kontroll har du på hvor høy inntekten din blir for i år.
+
+– Du kan for eksempel bruke denne (link) kalkulatoren fra Skatteetaten til å beregne hvor mye gevinst du kan realisere, når vi nærmer oss slutten av desember. 

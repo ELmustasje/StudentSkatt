@@ -1,7 +1,8 @@
-* resultat sider: inntekt, formue, bsu, huslån, reise, utgifter, askjer, gjennerelle tips    
+* resultat sider: gjennerelle tips    
 * legge til hvordan regne netto formue
 * Finne ut mer om skatteformler, fradrag osv.
 * routing
+* legg til doktorgrad option se: "skattemelding for studenter - fradragene du har krav på"
 
 
 

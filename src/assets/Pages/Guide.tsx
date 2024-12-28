@@ -47,17 +47,22 @@ const Guide: React.FC = () => {
     if (income > 214213) {
       userBenefits.push(
         <a href="/inntektsgrense" target="_blank" rel="noopener noreferrer">
-          Du har inntekt over inntektsgrensen til Lånekassen. Dette kan påvirke ditt lån. Leter etter en god løsning for dette.
+          Du har inntekt over inntektsgrensen til Lånekassen. Dette påvirker ditt stipend. Har ikke funnet en god løsing enda....
         </a>
       );
     }
 
-    if (networth > 487340) {
+    const formuegrense = 487340;
+    if (networth > formuegrense) {
       userBenefits.push(
         <a href="/formuegrense" target="_blank" rel="noopener noreferrer">
-          Du har formue over formuegrensen til Lånekassen. Dette kan påvirke ditt lån. Se måter å flytte formuen på.
+          Du har formue over formuegrensen til Lånekassen. Dette kan påvirke ditt stipend. Se måter å flytte formuen på.
         </a>
       );
+    } else if (networth > formuegrense - 100000) {
+      <a href="/formuegrense" target="_blank" rel="noopener noreferrer">
+        Du har bare 100 000 å gå på får du når formuegrense, om du venter en øking å mer enn det kan dette påvirke ditt stipend. Se måter å flyte formuen på.
+      </a>
     }
 
     if (mortage > 0) {
@@ -70,8 +75,8 @@ const Guide: React.FC = () => {
 
     if (travel > 14400) {
       userBenefits.push(
-        <a href="/reisefradrag" target="_blank" rel="noopener noreferrer">
-          Du har nok reisekostnadder til å kunne få fradrag på skatte. Se hvordan!.
+        <a href="/reise-fradrag" target="_blank" rel="noopener noreferrer">
+          Du har nok reisekostnadder til å kunne få fradrag på skatte. Se hvordan.
         </a>
       );
     }
@@ -85,18 +90,19 @@ const Guide: React.FC = () => {
       );
     }
 
-    const maxWithDrawl = Math.floor((minExpenses + 88250 - income) / 1.72 / 10) * 10;
-    if (aksje < maxWithDrawl && aksje > 0) {
+    const personfradrag = 88250
+    const maxWithdrawl = Math.floor((minExpenses + personfradrag - income) / 1.72 / 10) * 10;
+    if (maxWithdrawl > 1) {
       userBenefits.push(
         <a href="/skattefritt-aksjer" target="_blank" rel="noopener noreferrer">
-          Her er et smutthull du kan benytte for å ta ut {aksje} kr av aksjene dine skattefritt!
+          Her er et smutthull du kan benytte for å ta ut {Math.min(maxWithdrawl, aksje)} kr i gevinst fra aksjene dine skattefritt!
         </a>
       );
     }
 
     const maxBSU = 27500;
     const frikort = 70000;
-    if (BSU > maxBSU && income > frikort) {
+    if (BSU < maxBSU && income > frikort) {
       userBenefits.push(
         <a href="/bsubesparing" target="_blank" rel="noopener noreferrer">
           Du har nok inntekt til at det blir smart å spare i BSU, se her.
@@ -104,7 +110,7 @@ const Guide: React.FC = () => {
       );
     } else if (BSU > 0 && income < frikort) {
       userBenefits.push(
-        <a href="/fondbesparing" target="_blank" rel="noopener noreferrer">
+        <a href="/fond" target="_blank" rel="noopener noreferrer">
           Du har for lite inntekt til å få nok ut av BSU, se her!
         </a>
       );
