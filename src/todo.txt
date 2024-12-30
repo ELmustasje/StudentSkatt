@@ -3,6 +3,7 @@
 * Finne ut mer om skatteformler, fradrag osv.
 * routing
 * legg til doktorgrad option se: "skattemelding for studenter - fradragene du har krav på"
+* fikse minstrafrag max =....
 
 
 

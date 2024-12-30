@@ -44,10 +44,11 @@ const Guide: React.FC = () => {
     // Create an array to store the benefits
     let userBenefits: React.ReactNode[] = [];
 
-    if (income > 214213) {
+    const inntektsgrense = 199591
+    if (income > inntektsgrense) {
       userBenefits.push(
         <a href="/inntektsgrense" target="_blank" rel="noopener noreferrer">
-          Du har inntekt over inntektsgrensen til Lånekassen. Dette påvirker ditt stipend. Har ikke funnet en god løsing enda....
+          Du har høy nok inntekt til at du får redusert stipend. Dette er ikke så mye å gjøre med, men du finner mer info her.
         </a>
       );
     }
@@ -61,7 +62,7 @@ const Guide: React.FC = () => {
       );
     } else if (networth > formuegrense - 100000) {
       <a href="/formuegrense" target="_blank" rel="noopener noreferrer">
-        Du har bare 100 000 å gå på får du når formuegrense, om du venter en øking å mer enn det kan dette påvirke ditt stipend. Se måter å flyte formuen på.
+        Du nærmer deg formuegrensen, om du venter en øking i formue framover kan dette påvirke ditt stipend. Se måter å flyte formuen på.
       </a>
     }
 
@@ -81,7 +82,7 @@ const Guide: React.FC = () => {
       );
     }
 
-    const minExpenses = income * 0.46;
+    const minExpenses = Math.min(92000, income * 0.46);
     if (expenses > minExpenses) {
       userBenefits.push(
         <a href="/utgiftsfradrag" target="_blank" rel="noopener noreferrer">
@@ -129,18 +130,15 @@ const Guide: React.FC = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', margin: '50px auto', maxWidth: '600px' }}>
-      <h1 style={{ marginBottom: '20px', fontSize: '2rem', color: '#333' }}>
-        Finn dine Skattefordeler
-      </h1>
-      <p style={{ fontSize: '1.2rem', color: '#555' }}>
+    <div className="container my-5 p-4 bg-light rounded shadow-sm text-center">
+      <h1 className="mb-4 text-primary">Finn dine Skattefordeler</h1>
+      <p className="mb-4 text-muted" style={{ fontSize: '1.2rem' }}>
         Svar på noen spørsmål, så finner vi ut hvilke skattefordeler du kan ha krav på.
       </p>
-      <form onSubmit={handleSubmit} style={{ textAlign: 'left', marginTop: '20px' }}>
-        <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="income" style={{ display: 'block', marginBottom: '5px', color: '#555' }}>
+      <form onSubmit={handleSubmit} className="text-left">
+        <div className="form-group mb-3">
+          <label htmlFor="income" className="form-label text-secondary">
             Hva er din årlige skattbare inntekt?
-
           </label>
           <input
             type="text"
@@ -148,12 +146,12 @@ const Guide: React.FC = () => {
             name="income"
             value={formatNumber(answers.income)}
             onChange={handleChange}
-            style={{ width: '100%', padding: '8px', fontSize: '1rem' }}
+            className="form-control"
           />
         </div>
-        <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="networth" style={{ display: 'block', marginBottom: '5px', color: '#555' }}>
-            Hva er din netto formue? <a href='/nettoformue' target='_blank' rel='noopener noreferrer'>(Se hvordan regne ut nettoformue)</a>
+        <div className="form-group mb-3">
+          <label htmlFor="networth" className="form-label text-secondary">
+            Hva er din netto formue? <a href="/nettoformue" target="_blank" rel="noopener noreferrer">(Se hvordan regne ut nettoformue)</a>
           </label>
           <input
             type="text"
@@ -161,11 +159,11 @@ const Guide: React.FC = () => {
             name="networth"
             value={formatNumber(answers.networth)}
             onChange={handleChange}
-            style={{ width: '100%', padding: '8px', fontSize: '1rem' }}
+            className="form-control"
           />
         </div>
-        <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="mortage" style={{ display: 'block', marginBottom: '5px', color: '#555' }}>
+        <div className="form-group mb-3">
+          <label htmlFor="mortage" className="form-label text-secondary">
             Hvor mye boliglån har du sammen med foreldrene dine?
           </label>
           <input
@@ -174,11 +172,11 @@ const Guide: React.FC = () => {
             name="mortage"
             value={formatNumber(answers.mortage)}
             onChange={handleChange}
-            style={{ width: '100%', padding: '8px', fontSize: '1rem' }}
+            className="form-control"
           />
         </div>
-        <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="travel" style={{ display: 'block', marginBottom: '5px', color: '#555' }}>
+        <div className="form-group mb-3">
+          <label htmlFor="travel" className="form-label text-secondary">
             Har du mye reisekostnadder?
           </label>
           <input
@@ -187,11 +185,11 @@ const Guide: React.FC = () => {
             name="travel"
             value={formatNumber(answers.travel)}
             onChange={handleChange}
-            style={{ width: '100%', padding: '8px', fontSize: '1rem' }}
+            className="form-control"
           />
         </div>
-        <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="aksje" style={{ display: 'block', marginBottom: '5px', color: '#555' }}>
+        <div className="form-group mb-3">
+          <label htmlFor="aksje" className="form-label text-secondary">
             Har du urealiserte aksje/fonds gevinster?
           </label>
           <input
@@ -200,11 +198,11 @@ const Guide: React.FC = () => {
             name="aksje"
             value={formatNumber(answers.aksje)}
             onChange={handleChange}
-            style={{ width: '100%', padding: '8px', fontSize: '1rem' }}
+            className="form-control"
           />
         </div>
-        <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="expenses" style={{ display: 'block', marginBottom: '5px', color: '#555' }}>
+        <div className="form-group mb-3">
+          <label htmlFor="expenses" className="form-label text-secondary">
             Hva er din årlig kostnadd relatert til studie (f.eks. pensum, semesteravgift, osv)?
           </label>
           <input
@@ -213,11 +211,11 @@ const Guide: React.FC = () => {
             name="expenses"
             value={formatNumber(answers.expenses)}
             onChange={handleChange}
-            style={{ width: '100%', padding: '8px', fontSize: '1rem' }}
+            className="form-control"
           />
         </div>
-        <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="BSU" style={{ display: 'block', marginBottom: '5px', color: '#555' }}>
+        <div className="form-group mb-3">
+          <label htmlFor="BSU" className="form-label text-secondary">
             Hvor mye har du fyllt opp på din BSU i år?
           </label>
           <input
@@ -226,24 +224,13 @@ const Guide: React.FC = () => {
             name="BSU"
             value={formatNumber(answers.BSU)}
             onChange={handleChange}
-            style={{ width: '100%', padding: '8px', fontSize: '1rem' }}
+            className="form-control"
           />
         </div>
-        <div style={{ textAlign: 'center', margin: '50px auto', maxWidth: '600px' }}>
+        <div className="text-center mt-4">
           <button
             type="submit"
-            style={{
-              display: 'inline-block',
-              marginTop: '20px',
-              padding: '10px 20px',
-              backgroundColor: '#007bff',
-              color: '#fff',
-              textDecoration: 'none',
-              borderRadius: '5px',
-              fontSize: '1rem',
-              border: 'none',
-              cursor: 'pointer',
-            }}
+            className="btn btn-primary btn-lg"
           >
             Se dine fordeler
           </button>
@@ -251,11 +238,13 @@ const Guide: React.FC = () => {
       </form>
       {/* Display the benefits list if there are any */}
       {benefits.length > 0 && (
-        <div style={{ marginTop: '40px', textAlign: 'left', maxWidth: '600px', margin: '0 auto' }}>
-          <h3 style={{ fontSize: '1.5rem', color: '#333' }}>Dine skattefordeler:</h3>
-          <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: '#555' }}>
+        <div className="mt-5 text-left">
+          <h3 className="text-primary mb-3">Dine skattefordeler:</h3>
+          <ul className="list-group">
             {benefits.map((benefit, index) => (
-              <li key={index} style={{ fontSize: '1.2rem' }}>{benefit}</li>
+              <li key={index} className="list-group-item text-muted" style={{ fontSize: '1.2rem' }}>
+                {benefit}
+              </li>
             ))}
           </ul>
         </div>
