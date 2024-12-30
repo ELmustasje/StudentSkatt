@@ -9,7 +9,7 @@ function Welcome() {
           Få full oversikt over skattefordeler og fradrag som student! Jeg hjelper deg med å spare penger og gjøre skatteprosessen enklere.
         </p>
         <p className="text-secondary mt-3">
-          NB: Dette er bare tips og triks.
+          NB: Dette er bare tips og triks. Test
         </p>
         <a
           href="/guide"
