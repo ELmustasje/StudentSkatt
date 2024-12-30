@@ -22,7 +22,3 @@ Velkommen til **Skattefordeler for Studenter**! Dette er en nettside laget for �
   
 - Etter innsending av skjemaet vil brukeren få en liste over potensielle skattefordeler og smutthull basert på deres økonomiske situasjon.
 - **Lenker til ekstern informasjon**: Alle fordelene er lenket til eksterne kilder, der brukeren kan lære mer om hvordan de kan benytte seg av skattefordelene.
-
-
-
-

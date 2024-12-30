@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './assets/Footer'
-import Guide from './assets/Pages/Guide'
-import Innteksgrense from './assets/Pages/Innteksgrense';
-import Formuegrense from './assets/Pages/Formuegrense';
-import Fond from './assets/Pages/Fond';
-import Bsubesparing from './assets/Pages/Bsusparing';
-import GenerelleTips from './assets/Pages/GenerelleTips';
-import Nettoformue from './assets/Pages/Nettoformue';
-import Reisefradrag from './assets/Pages/Reisefradrag';
-import Rentefradrag from './assets/Pages/Rentefradrag';
-import SkattefrittAskjer from './assets/Pages/SkattefrittAksjer';
-import Utgiftsfradrag from './assets/Pages/Utgiftsfradrag';
-import Welcome from './assets/Welcome';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Footer from './assets/Footer.tsx'
+import Guide from './assets/Pages/Guide.tsx'
+import Innteksgrense from './assets/Pages/Innteksgrense.tsx';
+import Formuegrense from './assets/Pages/Formuegrense.tsx';
+import Fond from './assets/Pages/Fond.tsx';
+import Bsubesparing from './assets/Pages/Bsusparing.tsx';
+import GenerelleTips from './assets/Pages/GenerelleTips.tsx';
+import Nettoformue from './assets/Pages/Nettoformue.tsx';
+import Reisefradrag from './assets/Pages/Reisefradrag.tsx';
+import Rentefradrag from './assets/Pages/Rentefradrag.tsx';
+import SkattefrittAskjer from './assets/Pages/SkattefrittAksjer.tsx';
+import Utgiftsfradrag from './assets/Pages/Utgiftsfradrag.tsx';
+import Welcome from './assets/Welcome.tsx';
 
 function App() {
   return (
