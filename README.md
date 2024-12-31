@@ -4,7 +4,6 @@ Velkommen til **Skattefordeler for Studenter**! Dette er en nettside laget for �
 
 ## 📚 Teknologier som er brukt
 
-- **Vite**: En rask og moderne utviklingsserver for React-applikasjoner, som gjør utviklingen både enkel og rask.
 - **React**: Et populært JavaScript-bibliotek som brukes til å bygge interaktive brukergrensesnitt.
 - **TypeScript**: Et superset av JavaScript som legger til statisk typekontroll og gir en mer robust utviklingsopplevelse.
 - **CSS**: Brukes til styling av applikasjonen, og skaper et responsivt og brukervennlig design.
