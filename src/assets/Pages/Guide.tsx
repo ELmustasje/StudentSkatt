@@ -44,7 +44,7 @@ const Guide: React.FC = () => {
     // Create an array to store the benefits
     let userBenefits: React.ReactNode[] = [];
 
-    const inntektsgrense = 199591
+    const inntektsgrense = 214213
     if (income > inntektsgrense) {
       userBenefits.push(
         <a href="/inntektsgrense" target="_blank" rel="noopener noreferrer">
@@ -177,7 +177,7 @@ const Guide: React.FC = () => {
         </div>
         <div className="form-group mb-3">
           <label htmlFor="travel" className="form-label text-secondary">
-            Har du mye reisekostnadder?
+            Hva er dine reisekostnadder knyttet til studie?
           </label>
           <input
             type="text"
@@ -190,7 +190,7 @@ const Guide: React.FC = () => {
         </div>
         <div className="form-group mb-3">
           <label htmlFor="aksje" className="form-label text-secondary">
-            Har du urealiserte aksje/fonds gevinster?
+            Hva har du i urealiserte aksje/fonds gevinster
           </label>
           <input
             type="text"

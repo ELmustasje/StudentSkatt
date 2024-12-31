@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container text-center">
         <p className="mb-0">
           <small>
-            Informasjonen på denne nettsiden er kun ment som veiledning og er ikke ment å erstatte profesjonell skatterådgivning. Selv om jeg tilstreber å gi nøyaktig og oppdatert informasjon, kan jeg ikke garantere at informasjonen på nettsiden er fullstendig, korrekt eller tilstrekkelig for å oppfylle dine spesifikke skatteforpliktelser. Skatteetaten har myndighet til å vurdere og gjennomskjære skatteforhold, og jeg fraskriver oss alt ansvar i tilfelle en gjennomgang av Skatteetaten eller andre relevante myndigheter som fører til endringer i dine skatteforhold, inkludert eventuelle pålegg, straff eller tilleggsskatt.
+            Informasjonen på denne nettsiden er kun ment som veiledning og er ikke ment å erstatte profesjonell skatterådgivning. Selv om jeg tilstreber å gi nøyaktig og oppdatert informasjon, kan jeg ikke garantere at informasjonen på nettsiden er fullstendig, korrekt eller tilstrekkelig for å oppfylle dine spesifikke skatteforpliktelser. Skatteetaten har myndighet til å vurdere og gjennomskjære skatteforhold, og jeg fraskriver meg alt ansvar i tilfelle en gjennomgang av Skatteetaten eller andre relevante myndigheter som fører til endringer i dine skatteforhold, inkludert eventuelle pålegg, straff eller tilleggsskatt.
             <br />
             Bruk av informasjonen på denne nettsiden skjer på egen risiko, og jeg anbefaler at du søker profesjonell skatterådgivning for å sikre at du overholder gjeldende skatteregler.
           </small>
