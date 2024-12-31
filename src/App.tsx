@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Footer from './assets/Footer.tsx'
 import Guide from './assets/Pages/Guide.tsx'
-import { Analytics } from '@vercel/analytics/react';
 import Innteksgrense from './assets/Pages/Innteksgrense.tsx';
 import Formuegrense from './assets/Pages/Formuegrense.tsx';
 import Fond from './assets/Pages/Fond.tsx';
@@ -37,7 +36,6 @@ function App() {
         </div>
       </Router>
       <Footer />
-      <Analytics />
     </div>
   )
 }
