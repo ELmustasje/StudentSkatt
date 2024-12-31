@@ -12,6 +12,7 @@ import Rentefradrag from './assets/Pages/Rentefradrag.tsx';
 import SkattefrittAskjer from './assets/Pages/SkattefrittAksjer.tsx';
 import Utgiftsfradrag from './assets/Pages/Utgiftsfradrag.tsx';
 import Welcome from './assets/Welcome.tsx';
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   return (
@@ -32,9 +33,9 @@ function App() {
             <Route path="/skattefritt-aksjer" element={<SkattefrittAskjer />} />
             <Route path="/utgiftsfradrag" element={<Utgiftsfradrag />} />
           </Routes>
-
         </div>
       </Router>
+      <Analytics />
       <Footer />
     </div>
   )
