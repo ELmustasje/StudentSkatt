@@ -93,7 +93,7 @@ const Guide: React.FC = () => {
 
     const personfradrag = 88250
     const maxWithdrawl = Math.floor((minExpenses + personfradrag - income) / 1.72 / 10) * 10;
-    if (maxWithdrawl > 1) {
+    if (maxWithdrawl > 1 && aksje > 1) {
       userBenefits.push(
         <a href="/skattefritt-aksjer" target="_blank" rel="noopener noreferrer">
           Her er et smutthull du kan benytte for å ta ut {Math.min(maxWithdrawl, aksje)} kr i gevinst fra aksjene dine skattefritt!
