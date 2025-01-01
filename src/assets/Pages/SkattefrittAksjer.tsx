@@ -1,3 +1,4 @@
+import { MINSTEFRADRAG_RATE, MINSTEFRADRAG_MAX, PERSONFRADRAG, OPPJUSTERINGSFAKTOR } from "./skattesatser.ts";
 
 const SkattefrittAskjer = () => {
   return (
@@ -16,7 +17,7 @@ const SkattefrittAskjer = () => {
           <p className="text-muted" style={{ fontSize: '1.2rem' }}>
             Visste du at du i år kan ta ut skattefri gevinst fra aksjer og fond? Dette smutthullet utnytter
             personfradraget, som har økt betydelig de siste årene – fra 52 250 kroner i 2021 til 88 250 kroner
-            i 2024. I forslaget til statsbudsjettet for 2025 er det foreslått en ytterligere økning til
+            i 2024. I statsbudsjettet for 2025 blir det en ytterligere økning til
             108 550 kroner, noe som utgjør en samlet økning på 106 % over fem år.
           </p>
         </div>
@@ -25,8 +26,8 @@ const SkattefrittAskjer = () => {
       <div className="card my-3 shadow-sm">
         <div className="card-body">
           <p className="text-muted" style={{ fontSize: '1.2rem' }}>
-            Kombinasjonen av økt personfradrag og et minstefradrag på 46 % (med en maksgrense på 92 000 kroner)
-            gjør at du samlet sett kun betaler trygdeavgift, og ikke skatt på alminnelig inntekt under 200 000 kroner.
+            Kombinasjonen av økt personfradrag og et minstefradrag på {(MINSTEFRADRAG_RATE * 100).toLocaleString('no-NO')}% (med en maksgrense på {MINSTEFRADRAG_MAX.toLocaleString('no-NO')} kroner)
+            gjør at du samlet sett kun betaler trygdeavgift, og ikke skatt på alminnelig inntekt under {(PERSONFRADRAG + MINSTEFRADRAG_MAX).toLocaleString('no-NO')} kroner.
             Dette gir en mulighet til å ta ut gevinst fra aksjer og fond innenfor denne grensen helt skattefritt.
             Men det finnes regler du må være oppmerksom på.
           </p>
@@ -43,10 +44,10 @@ const SkattefrittAskjer = () => {
             For aksjer og aksjefond må oppjusteringsfaktoren tas med i beregningen. Formelen ser slik ut:
           </p>
           <p className="text-muted" style={{ fontSize: '1.2rem' }}>
-            <code>Max uttak = (Minstefradrag + Personfradrag - Inntekt) / 1.72</code>
+            <code>Max uttak = (Minstefradrag + Personfradrag - Inntekt) / Oppjusteringsfaktoren</code>
           </p>
           <p className="text-muted" style={{ fontSize: '1.2rem' }}>
-            Oppjusteringsfaktoren for 2024 er 72 %, og minstefradraget utgjør 46 % av inntekten (maks 92 000 kroner).
+            Oppjusteringsfaktoren for 2025 er {(OPPJUSTERINGSFAKTOR * 100).toLocaleString('no-NO')} %, og minstefradraget utgjør 46 % av inntekten (maks 92 000 kroner).
           </p>
         </div>
       </div>

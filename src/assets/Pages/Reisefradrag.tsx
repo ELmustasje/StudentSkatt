@@ -1,3 +1,4 @@
+import { REISEGRENSE } from "./skattesatser.ts";
 
 const Reisefradrag = () => {
   return (
@@ -15,7 +16,7 @@ const Reisefradrag = () => {
         <div className="card-body">
           <p className="text-muted" style={{ fontSize: '1.2rem' }}>
             Du kan kreve fradrag for reise mellom hjem og arbeid dersom du bor langt nok unna
-            og har reist ofte nok til at du har kommet over minstebeløpet på 14 400 kroner i 2023.
+            og har reist ofte nok til at du har kommet over minstebeløpet på {REISEGRENSE.toLocaleString('no-NO')} kroner i 2025.
           </p>
           <a href="https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/arbeid-trygd-og-pensjon/reise-tilfra-jobb/reisefradragskalkulator/" target="_blank" rel="noopener noreferrer" className="ml-2">
             Se her for mer info

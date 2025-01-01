@@ -1,3 +1,4 @@
+import { MINSTEFRADRAG_RATE, MINSTEFRADRAG_MAX } from "./skattesatser.ts";
 
 const Utgiftsfradrag = () => {
   return (
@@ -15,7 +16,7 @@ const Utgiftsfradrag = () => {
         <div className="card-body">
           <p className="text-muted" style={{ fontSize: '1.2rem' }}>
             Som student har du rett til fradrag for kostnader direkte knyttet til utdanningen din. Alle disse
-            utgiftene omfattes av minstefradraget ditt, som er 46% av inntekt opptil 92 000 kroner. Men hvis utdanningsutgiftene
+            utgiftene omfattes av minstefradraget ditt, som er {(MINSTEFRADRAG_RATE * 100).toLocaleString('no-NO')}% av inntekt opptil {MINSTEFRADRAG_MAX.toLocaleString('no-NO')} kroner. Men hvis utdanningsutgiftene
             overstiger minstefradraget, har du muligheten til å velge fradrag for faktiske utgifter i stedet.
           </p>
           <a href="https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/arbeid-trygd-og-pensjon/utdanning/fradrag-for-kostnader-til-utdanning/" target="_blank" rel="noopener noreferrer">

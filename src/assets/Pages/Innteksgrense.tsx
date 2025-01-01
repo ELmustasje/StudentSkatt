@@ -1,3 +1,4 @@
+import { FORMUEGRENSEN, INNTEKTSGRENSE } from "./skattesatser.ts";
 
 const Innteksgrense = () => {
   return (
@@ -44,8 +45,8 @@ const Innteksgrense = () => {
           <p className="text-muted" style={{ fontSize: '1.2rem' }}>
             Grensene for å unngå kutt i stipend er:
             <ul>
-              <li>Inntekt: 199 591 kroner</li>
-              <li>Formue: 454 075 kroner</li>
+              <li>Inntekt: {INNTEKTSGRENSE.toLocaleString('no-NO')} kroner</li>
+              <li>Formue: {FORMUEGRENSEN.toLocaleString('no-NO')} kroner</li>
             </ul>
           </p>
         </div>

@@ -1,4 +1,14 @@
 import React, { useState } from 'react';
+import {
+  INNTEKTSGRENSE,
+  FORMUEGRENSEN,
+  REISEGRENSE,
+  MINSTEFRADRAG_RATE,
+  MINSTEFRADRAG_MAX,
+  PERSONFRADRAG,
+  MAX_BSU,
+  FRIKORT,
+} from './skattesatser.ts'
 
 const Guide: React.FC = () => {
   const [answers, setAnswers] = useState({
@@ -44,8 +54,7 @@ const Guide: React.FC = () => {
     // Create an array to store the benefits
     let userBenefits: React.ReactNode[] = [];
 
-    const inntektsgrense = 214213
-    if (income > inntektsgrense) {
+    if (income > INNTEKTSGRENSE) {
       userBenefits.push(
         <a href="/inntektsgrense" target="_blank" rel="noopener noreferrer">
           Du har høy nok inntekt til at du får redusert stipend. Dette er ikke så mye å gjøre med, men du finner mer info her.
@@ -53,14 +62,13 @@ const Guide: React.FC = () => {
       );
     }
 
-    const formuegrense = 487340;
-    if (networth > formuegrense) {
+    if (networth > FORMUEGRENSEN) {
       userBenefits.push(
         <a href="/formuegrense" target="_blank" rel="noopener noreferrer">
           Du har formue over formuegrensen til Lånekassen. Dette kan påvirke ditt stipend. Se måter å flytte formuen på.
         </a>
       );
-    } else if (networth > formuegrense - 100000) {
+    } else if (networth > FORMUEGRENSEN - 100000) {
       <a href="/formuegrense" target="_blank" rel="noopener noreferrer">
         Du nærmer deg formuegrensen, om du venter en øking i formue framover kan dette påvirke ditt stipend. Se måter å flyte formuen på.
       </a>
@@ -74,7 +82,7 @@ const Guide: React.FC = () => {
       );
     }
 
-    if (travel > 14400) {
+    if (travel > REISEGRENSE) {
       userBenefits.push(
         <a href="/reise-fradrag" target="_blank" rel="noopener noreferrer">
           Du har nok reisekostnadder til å kunne få fradrag på skatte. Se hvordan.
@@ -82,7 +90,7 @@ const Guide: React.FC = () => {
       );
     }
 
-    const minExpenses = Math.min(92000, income * 0.46);
+    const minExpenses = Math.min(MINSTEFRADRAG_MAX, income * MINSTEFRADRAG_RATE);
     if (expenses > minExpenses) {
       userBenefits.push(
         <a href="/utgiftsfradrag" target="_blank" rel="noopener noreferrer">
@@ -91,8 +99,7 @@ const Guide: React.FC = () => {
       );
     }
 
-    const personfradrag = 88250
-    const maxWithdrawl = Math.floor((minExpenses + personfradrag - income) / 1.72 / 10) * 10;
+    const maxWithdrawl = Math.floor((minExpenses + PERSONFRADRAG - income) / 1.72 / 10) * 10;
     if (maxWithdrawl > 1 && aksje > 1) {
       userBenefits.push(
         <a href="/skattefritt-aksjer" target="_blank" rel="noopener noreferrer">
@@ -101,15 +108,13 @@ const Guide: React.FC = () => {
       );
     }
 
-    const maxBSU = 27500;
-    const frikort = 70000;
-    if (BSU < maxBSU && income > frikort) {
+    if (BSU < MAX_BSU && income > FRIKORT) {
       userBenefits.push(
         <a href="/bsubesparing" target="_blank" rel="noopener noreferrer">
           Du har nok inntekt til at det blir smart å spare i BSU, se her.
         </a>
       );
-    } else if (BSU > 0 && income < frikort) {
+    } else if (BSU > 0 && income < FRIKORT) {
       userBenefits.push(
         <a href="/fond" target="_blank" rel="noopener noreferrer">
           Du har for lite inntekt til å få nok ut av BSU, se her!
@@ -117,17 +122,10 @@ const Guide: React.FC = () => {
       );
 
     }
-    // if (userBenefits.length === 0) {
-    //   userBenefits.push(
-    //     <a href="/generelle-tips" target="_blank" rel="noopener noreferrer">
-    //       Vi fant ingen mulige smutthull for deg. Se gjennerelle tips for å forberde deg for neste år: .....
-    //     </a>
-    //   );
-    // }
     if (userBenefits.length === 0) {
       userBenefits.push(
-        <a >
-          Vi fant ingen mulige smutthull for deg :(
+        <a href="/generelle-tips" target="_blank" rel="noopener noreferrer">
+          Vi fant ingen mulige smutthull for deg. Se gjennerelle tips for å forberde deg for neste år: .....
         </a>
       );
     }
