@@ -117,10 +117,17 @@ const Guide: React.FC = () => {
       );
 
     }
+    // if (userBenefits.length === 0) {
+    //   userBenefits.push(
+    //     <a href="/generelle-tips" target="_blank" rel="noopener noreferrer">
+    //       Vi fant ingen mulige smutthull for deg. Se gjennerelle tips for å forberde deg for neste år: .....
+    //     </a>
+    //   );
+    // }
     if (userBenefits.length === 0) {
       userBenefits.push(
-        <a href="/generelle-tips" target="_blank" rel="noopener noreferrer">
-          Vi fant ingen mulige smutthull for deg. Se gjennerelle tips for å forberde deg for neste år: .....
+        <a >
+          Vi fant ingen mulige smutthull for deg :(
         </a>
       );
     }
