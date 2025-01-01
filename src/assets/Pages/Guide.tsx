@@ -57,7 +57,7 @@ const Guide: React.FC = () => {
     if (income > INNTEKTSGRENSE) {
       userBenefits.push(
         <a href="/inntektsgrense" target="_blank" rel="noopener noreferrer">
-          Du har høy nok inntekt til at du får redusert stipend. Dette er ikke så mye å gjøre med, men du finner mer info her.
+          Du har høy nok inntekt til at du får redusert stipend. Du kan vurdere å jobbe mindre! Se hvorfor.
         </a>
       );
     }
@@ -77,7 +77,7 @@ const Guide: React.FC = () => {
     if (mortage > 0) {
       userBenefits.push(
         <a href="/rente-fradrag" target="_blank" rel="noopener noreferrer">
-          Du har lån med dine foreldre. Husk å få max ut av rentefradragene!
+          Du har lån med dine foreldre. Husk å få max ut av rentefradragene! Se hvordan her.
         </a>
       );
     }
@@ -103,7 +103,7 @@ const Guide: React.FC = () => {
     if (maxWithdrawl > 1 && aksje > 1) {
       userBenefits.push(
         <a href="/skattefritt-aksjer" target="_blank" rel="noopener noreferrer">
-          Her er et smutthull du kan benytte for å ta ut {Math.min(maxWithdrawl, aksje)} kr i gevinst fra aksjene dine skattefritt!
+          Her er et smutthull du kan benytte for å ta ut {Math.min(maxWithdrawl, aksje)} kr i gevinst fra aksjene dine skattefritt! Les her.
         </a>
       );
     }
@@ -125,10 +125,11 @@ const Guide: React.FC = () => {
     if (userBenefits.length === 0) {
       userBenefits.push(
         <a href="/generelle-tips" target="_blank" rel="noopener noreferrer">
-          Vi fant ingen mulige smutthull for deg. Se gjennerelle tips for å forberde deg for neste år: .....
+          Vi fant ingen mulige smutthull for deg. Se gjennerelle tips for å forberde deg for neste år.
         </a>
       );
     }
+
 
     // Set the benefits in the state
     setBenefits(userBenefits);
