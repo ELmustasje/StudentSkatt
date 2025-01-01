@@ -6,7 +6,7 @@ Velkommen til **Skattefordeler for Studenter**! Dette er en nettside laget for �
 
 - **React**: Et populært JavaScript-bibliotek som brukes til å bygge interaktive brukergrensesnitt.
 - **TypeScript**: Et superset av JavaScript som legger til statisk typekontroll og gir en mer robust utviklingsopplevelse.
-- **CSS**: Brukes til styling av applikasjonen, og skaper et responsivt og brukervennlig design.
+- **BOOTSTRAP**: Brukes til styling av applikasjonen, og skaper et responsivt og brukervennlig design.
 
 ## 🛠️ Funksjoner
 
