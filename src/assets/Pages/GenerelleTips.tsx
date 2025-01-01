@@ -15,7 +15,7 @@ const GenerelleTips = () => {
 
       <h2 className="mt-4 text-secondary">1. Hold deg innenfor inntektsgrensen</h2>
       <p>
-        Hvis du tjener over {INNTEKTSGRENSE.toLocaleString('no-NO')}kroner i 2025, mister du en del av stipendet ditt fra Lånekassen. For hver krone du tjener over denne grensen, reduseres stipendet med 55 %, i tillegg til at du betaler vanlig inntektsskatt. Dette kan gi en effektiv marginalskatt på over 80 %, noe som betyr at det meste av den ekstra inntekten forsvinner.
+        Hvis du tjener over {INNTEKTSGRENSE.toLocaleString('no-NO')} kroner i 2025, mister du en del av stipendet ditt fra Lånekassen. For hver krone du tjener over denne grensen, reduseres stipendet med 55 %, i tillegg til at du betaler vanlig inntektsskatt. Dette kan gi en effektiv marginalskatt på over 80 %, noe som betyr at det meste av den ekstra inntekten forsvinner.
       </p>
 
       <h2 className="mt-4 text-secondary">2. Planlegg økonomien</h2>
