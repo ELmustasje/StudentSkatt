@@ -3,8 +3,13 @@ function Welcome() {
     <div className="container my-5">
       <div className="text-center">
         <h1 className="display-4 text-primary mb-4">
-          Velkommen til StudentSkatt
+          Velkommen til StudentSkatt: Hjelp med skatt for studenter
         </h1>
+        <meta
+          name="description"
+          content="Få hjelp med skatt som student. StudentSkatt gir deg råd om fradrag og tips for studenter som vil spare skatt."
+        />
+        <meta name="keywords" content="student skatt, skatt student, hjelp med skatt for studenter" />
         <p className="lead text-muted">
           Få full oversikt over skattefordeler og fradrag som student! Jeg hjelper deg med å spare penger og gjøre skatteprosessen enklere.
         </p>

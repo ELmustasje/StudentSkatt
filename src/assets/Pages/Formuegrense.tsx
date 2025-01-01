@@ -2,6 +2,11 @@
 function Formuegrense() {
   return (
     <div className="container my-5 shadow p-4 bg-light rounded">
+      <meta
+        name="description"
+        content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
+      />
+      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
       <h1 className="mb-4 text-primary">Formuegrense</h1>
       <p>
         Dette kan være en god måte å håndtere formue i forhold til Lånekassen, men det er viktig å være veldig forsiktig med hvordan du utfører slike transaksjoner. I Norge er det strenge regler om formue og inntekt når man søker om studielån og stipend, og det er derfor viktig at alle transaksjoner er legitime og ikke kan tolkes som en måte å skjule formue på. Her er noen ideer:

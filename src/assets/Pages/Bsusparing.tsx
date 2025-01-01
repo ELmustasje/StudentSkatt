@@ -20,6 +20,11 @@ const Bsusparing = () => {
           </p>
         </div>
       </div>
+      <meta
+        name="description"
+        content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
+      />
+      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
     </div>
   );
 };

@@ -12,8 +12,13 @@ const Footer: React.FC = () => {
             Bruk av informasjonen på denne nettsiden skjer på egen risiko, og jeg anbefaler at du søker profesjonell skatterådgivning for å sikre at du overholder gjeldende skatteregler.
           </small>
         </p>
+        <meta
+          name="description"
+          content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
+        />
+        <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
       </div>
-    </footer>
+    </footer >
   );
 };
 
