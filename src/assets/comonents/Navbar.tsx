@@ -30,16 +30,16 @@ const Navbar = () => {
                 Sider
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Bsu</a></li>
-                <li><a class="dropdown-item" href="#">Fond</a></li>
-                <li><a class="dropdown-item" href="#">Formuegrense</a></li>
-                <li><a class="dropdown-item" href="#">Generelle tips</a></li>
-                <li><a class="dropdown-item" href="#">Inntekt</a></li>
-                <li><a class="dropdown-item" href="#">Nettoformue</a></li>
-                <li><a class="dropdown-item" href="#">Reisefradrag</a></li>
-                <li><a class="dropdown-item" href="#">Rentefradrag</a></li>
-                <li><a class="dropdown-item" href="#">Skattefri aksjegevinst</a></li>
-                <li><a class="dropdown-item" href="#">Utgiftsfradrag</a></li>
+                <li><a class="dropdown-item" href="bsusparing">Bsu</a></li>
+                <li><a class="dropdown-item" href="fond">Fond</a></li>
+                <li><a class="dropdown-item" href="formuegrense">Formuegrense</a></li>
+                <li><a class="dropdown-item" href="generelle-tips">Generelle tips</a></li>
+                <li><a class="dropdown-item" href="inntektsgrense">Inntektsgrense</a></li>
+                <li><a class="dropdown-item" href="nettoformue">Nettoformue</a></li>
+                <li><a class="dropdown-item" href="reise-fradrag">Reisefradrag</a></li>
+                <li><a class="dropdown-item" href="rente-fradrag">Rentefradrag</a></li>
+                <li><a class="dropdown-item" href="skattefritt-aksjer">Skattefri aksjegevinst</a></li>
+                <li><a class="dropdown-item" href="utgiftsfradrag">Utgiftsfradrag</a></li>
               </ul>
             </li>
           </ul>
