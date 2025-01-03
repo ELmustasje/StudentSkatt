@@ -2,6 +2,11 @@
 const Bsusparing = () => {
   return (
     <div className="container my-5 p-4 bg-light rounded shadow-sm">
+      <meta
+        name="description"
+        content="Få hjelp med skatt som student. StudentSkatt gir deg råd om fradrag og tips for studenter som vil spare skatt."
+      />
+      <meta name="keywords" content="student skatt, skatt for studenter, skatt student, student økonomi" />
       <div className="text-center mb-4">
         <h1 className="display-4 text-primary">BSU og Skattefordeler</h1>
       </div>
@@ -20,11 +25,7 @@ const Bsusparing = () => {
           </p>
         </div>
       </div>
-      <meta
-        name="description"
-        content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
-      />
-      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
+
     </div>
   );
 };

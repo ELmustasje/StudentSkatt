@@ -4,6 +4,11 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="footer bg-dark text-white py-3">
+      <meta
+        name="description"
+        content="Få hjelp med skatt som student. StudentSkatt gir deg råd om fradrag og tips for studenter som vil spare skatt."
+      />
+      <meta name="keywords" content="student skatt, skatt for studenter, skatt student, student økonomi" />
       <div className="container text-center">
         <p className="mb-0">
           <small>

@@ -9,7 +9,7 @@ function Welcome() {
           name="description"
           content="Få hjelp med skatt som student. StudentSkatt gir deg råd om fradrag og tips for studenter som vil spare skatt."
         />
-        <meta name="keywords" content="student skatt, skatt student, hjelp med skatt for studenter" />
+        <meta name="keywords" content="student skatt, skatt for studenter, skatt student, student økonomi" />
         <p className="lead text-muted">
           Få full oversikt over skattefordeler og fradrag som student! Jeg hjelper deg med å spare penger og gjøre skatteprosessen enklere.
         </p>

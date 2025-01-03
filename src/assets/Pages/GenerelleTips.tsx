@@ -5,9 +5,9 @@ const GenerelleTips = () => {
     <div className="container my-5 shadow p-4 bg-light rounded">
       <meta
         name="description"
-        content="StudentSkatt gir råd til studenter om hvordan de kan balansere jobb, studier og økonomi. Lær hvorfor du ikke bør jobbe for mye og hvordan du kan leve et balansert studentliv."
+        content="StudentSkatt hjelper studenter med skatteplanlegging."
       />
-      <meta name="keywords" content="skatt for studenter, jobb som student, inntektsgrenser, studieliv" />
+      <meta name="keywords" content="student, skatt, skatt for studenter, formue, Formuegrense, student skatt, fradrag for studenter" />
       <h1 className="mb-4 text-primary">Generelle tips</h1>
       <p>
         Studietiden er en unik periode i livet – en tid for læring, nye opplevelser og minner. Selv om det kan være fristende å jobbe mye for å tjene ekstra penger, er det viktig å være klar over hvordan dette kan påvirke både økonomien og opplevelsen din som student. Her er noen generelle tips for å finne den riktige balansen:

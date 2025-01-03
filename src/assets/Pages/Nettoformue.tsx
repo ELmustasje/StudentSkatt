@@ -3,9 +3,9 @@ const Nettoformue = () => {
     <div className="container my-5 p-4 bg-light rounded shadow-sm">
       <meta
         name="description"
-        content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
+        content="StudentSkatt hjelper studenter med skatteplanlegging."
       />
-      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
+      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter, nettoformue" />
       <div className="text-center mb-4">
         <h1 className="display-4 text-primary">Beregning av Nettoformue</h1>
       </div>

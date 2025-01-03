@@ -7,7 +7,7 @@ const Innteksgrense = () => {
         name="description"
         content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
       />
-      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
+      <meta name="keywords" content="skatt for studenter, student skatt, inntektsgrenser, fradrag for studenter" />
       <div className="text-center mb-4">
         <h1 className="display-4 text-primary">Inntekts- og Formuesgrenser for Studenter</h1>
       </div>

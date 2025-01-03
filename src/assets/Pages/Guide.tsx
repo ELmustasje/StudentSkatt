@@ -137,6 +137,11 @@ const Guide: React.FC = () => {
 
   return (
     <div className="container my-5 p-4 bg-light rounded shadow-sm text-center">
+      <meta
+        name="description"
+        content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
+      />
+      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
       <h1 className="mb-4 text-primary">Finn dine Skattefordeler</h1>
       <p className="mb-4 text-muted" style={{ fontSize: '1.2rem' }}>
         Svar på noen spørsmål, så finner vi ut hvilke skattefordeler du kan ha krav på.
@@ -240,11 +245,7 @@ const Guide: React.FC = () => {
           >
             Se dine fordeler
           </button>
-          <meta
-            name="description"
-            content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
-          />
-          <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
+
         </div>
       </form>
       {/* Display the benefits list if there are any */}

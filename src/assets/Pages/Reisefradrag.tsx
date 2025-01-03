@@ -5,9 +5,9 @@ const Reisefradrag = () => {
     <div className="container my-5 p-4 bg-light rounded shadow-sm">
       <meta
         name="description"
-        content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag og holde deg innenfor inntektsgrenser."
+        content="StudentSkatt hjelper studenter med skatteplanlegging. Lær hvordan du kan dra nytte av fradrag som Reisefradrag."
       />
-      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter" />
+      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter, reisefradrag" />
       <div className="text-center mb-4">
         <h1 className="display-4 text-primary">Fradrag for Reisekostnader</h1>
       </div>
