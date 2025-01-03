@@ -110,7 +110,7 @@ const Guide: React.FC = () => {
 
     if (BSU < MAX_BSU && income > FRIKORT) {
       userBenefits.push(
-        <a href="/bsubesparing" target="_blank" rel="noopener noreferrer">
+        <a href="/bsusparing" target="_blank" rel="noopener noreferrer">
           Du har nok inntekt til at det blir smart å spare i BSU, se her.
         </a>
       );

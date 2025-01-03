@@ -1,0 +1,31 @@
+/* Custom colors */
+body {
+  background-color: #FFFFFF!important; /* Light blue background */
+  font-family: 'Outfit', sans-serif;
+}
+
+.navbar{
+  background-color: #083B77!important; 
+
+}
+
+/* In your CSS file */
+.navbar-nav .nav-link {
+  color: #FFFFFF!important; /* Add !important if needed */
+}
+
+.text-primary {
+  color: #333333 !important; /* Replace with your custom color */
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
