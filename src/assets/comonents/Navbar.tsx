@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
       <div className="container-fluid">
         <img
           className="navbar-brand"
-          src="logo.webp"
+          src="logo.png"
           alt="Logo"
           style={{ height: "60px", width: "auto" }}
         />
