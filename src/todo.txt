@@ -1,4 +1,3 @@
-* resultat sider: gjennerelle tips    
 * Finne ut mer om skatteformler, fradrag osv.
 * legg til doktorgrad option se: "skattemelding for studenter - fradragene du har krav på"
 
