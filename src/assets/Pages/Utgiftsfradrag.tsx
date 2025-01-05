@@ -7,7 +7,7 @@ const Utgiftsfradrag = () => {
         name="description"
         content="StudentSkatt hjelper studenter med skatteplanlegging."
       />
-      <meta name="keywords" content="skatt for studenter, student skatt, fradrag for studenter, utgifter, Utgiftsfradrag" />
+      <meta name="keywords" content="skatt for studenter, student sutgifter, Utgiftsfradragg" />
       <div className="text-center mb-4">
         <h1 className="display-4 text-primary">Fradrag for Utdanningsutgifter</h1>
       </div>
