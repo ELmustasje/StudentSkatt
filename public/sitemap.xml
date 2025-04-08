@@ -1,16 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://www.studentskatt.no/</loc>
-  <lastmod>2025-04-03T20:31:57+00:00</lastmod>
+	<loc>https://www.studentskatt.no/</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
+<url>
+	<loc>https://www.studentskatt.no/image</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/inntektsgrense</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/formuegrense</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/rente-fradrag</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/reise-fradrag</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/utgiftsfradrag</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/skattefritt-aksjer</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/bsusparing</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/fond</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/generelle-tips</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/nettoformue</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.studentskatt.no/guide</loc>
+	<lastmod>2025-04-08T12:34:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
 </urlset>
